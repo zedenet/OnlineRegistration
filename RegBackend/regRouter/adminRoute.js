@@ -51,7 +51,7 @@ const {
 
 //registarar route
 const {
-    getegistarars,
+    getregistarars,
     getregistarar,
     addregistarar,
     editregistarar,
