@@ -22,6 +22,11 @@ const studentTemplete = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+
+  country: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 module.exports = mongoose.model("admin", adminTemplete);
