@@ -2,27 +2,27 @@ const express = require("express");
 const router = express.Router();
 
 const {
-  getseps,
-  getsep,
-  addsep,
-  editsep,
-  deletesep,
+  getceps,
+  getcep,
+  addcep,
+  editcep,
+  deletecep,
 } = require("../controllers/cepController");
 
 // Get all seps
-router.get("/", getseps);
+router.get("/", getceps);
 
 // Get a single sep
-router.get("/:id", getsep);
+router.get("/:id", getcep);
 
 // Create a sep
-router.post("/create", addsep);
+router.post("/create", addcep);
 
 // Update a sep
-router.put("/update/:id", editsep);
+router.put("/update/:id", editcep);
 
 // Deleting a sep
-router.delete("/:id", deletesep);
+router.delete("/:id", deletecep);
 
 // finance route
 
@@ -53,7 +53,7 @@ const {
 
 
 const {
-    getegistarars,
+    getregistarars,
     getregistarar,
     addregistarar,
     editregistarar,
