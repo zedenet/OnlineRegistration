@@ -32,7 +32,7 @@ const {
     addfinance,
     editfinance,
     deletefinance,
-  } = require("../controllers/cepController");
+  } = require("../controllers/financeController");
   
   // Get all finances
   router.get("/", getfinances);
@@ -50,15 +50,13 @@ const {
   router.delete("/:id", deletefinance);
 
 //registarar route
-
-
 const {
     getregistarars,
     getregistarar,
     addregistarar,
     editregistarar,
     deleteregistarar,
-  } = require("../controllers/cepController");
+  } = require("../controllers/registararController");
   
   // Get all registarars
   router.get("/", getregistarars);
