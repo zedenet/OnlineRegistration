@@ -1,32 +1,20 @@
+const express = require("express");
+const app = express();
 const mongoose = require("mongoose");
-const studentTemplete = new mongoose.Schema({
-  Fullname: {
-    type: String,
-    require: true,
-  },
+const dotenv = require("dotenv");
+const routUrls = require("./routes/routes");
+const cors = require("cors");
+const port = 4000;
 
-  MobileNumber: {
-    type: Number,
-    require: true,
-  },
+dotenv.config();
 
-  Email: {
-    type: String,
-    require: true,
-  },
-  Username: {
-    type: String,
-    require: true,
-  },
-  password: {
-    type: Date,
-    default: Date.now,
-  },
-
-  country: {
-    type: Date,
-    default: Date.now,
-  },
+mongoose.connect(process.env.DB_CONNECTION_STRING, () => {
+  console.log("Database connected succesfully");
 });
 
-module.exports = mongoose.model("admin", adminTemplete);
+app.use(express.json());
+app.use(cors());
+app.use("/registration", routUrls);
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
