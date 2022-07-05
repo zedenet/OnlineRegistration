@@ -1,32 +1,14 @@
-const mongoose = require("mongoose");
-const studentTemplete = new mongoose.Schema({
-  Fullname: {
-    type: String,
-    require: true,
-  },
+const mongoose = require('mongoose');
 
-  MobileNumber: {
-    type: Number,
-    require: true,
-  },
-
-  Email: {
-    type: String,
-    require: true,
-  },
-  Username: {
-    type: String,
-    require: true,
-  },
-  password: {
-    type: Date,
-    default: Date.now,
-  },
-
-  country: {
-    type: Date,
-    default: Date.now,
-  },
+const UserSchema = mongoose.Schema({
+    id: String,
+    user_name: String,
+    password: String,
+    firstName: String,
+    lastName :String ,
+    emailId : String
+}, {
+    timestamps: true
 });
 
-module.exports = mongoose.model("admin", adminTemplete);
+module.exports = mongoose.model('users', UserSchema);
