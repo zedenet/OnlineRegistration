@@ -1,9 +1,29 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.4.1",
     "nodemon": "^2.0.18"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "regbackend",
+  "version": "1.0.0",
+  "description": "this is oline student  admission and registration system",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "OnlineRegistration"
+  },
+  "keywords": [
+    "addmistion",
+    "registration",
+    "application"
+  ],
+  "author": "Belay Alamneh (Friesbhat)",
+  "license": "ISC"
 }

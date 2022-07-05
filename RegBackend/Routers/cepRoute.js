@@ -1,9 +1,10 @@
-const express = require("express");
-const router = express.Router();
-
-const {
+module.exports = (app) => {
+    const users = require('../regControler/adminControler.js');
   
-} = require("../controllers/cepController");
-
-
-module.exports = router;
+   
+    app.post('/users', users.create);
+    app.get('/users', users.findAll);
+    app.get('/users/:id', users.findOne);
+    app.put('/users/:id', users.update);
+    app.delete('/users/:id', users.delete);
+  }
