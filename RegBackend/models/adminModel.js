@@ -20,10 +20,14 @@ const studentTemplete = new mongoose.Schema({
   },
   password: {
     type: Date,
-    default: Date.now,
+    require: true,
+  },
+  confirmPassword: {
+    type: String,
+    require: true,,
   },
 
-  country: {
+  reg_date: {
     type: Date,
     default: Date.now,
   },

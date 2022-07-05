@@ -1,32 +1,7 @@
-const mongoose = require("mongoose");
-const studentTemplete = new mongoose.Schema({
-  Fullname: {
-    type: String,
-    require: true,
-  },
+const express = require("express");
+const app = express();
+const dotenv = require("dotenv");
+const PORT = 4000;
+dotenv.config();
 
-  MobileNumber: {
-    type: Number,
-    require: true,
-  },
-
-  Email: {
-    type: String,
-    require: true,
-  },
-  Username: {
-    type: String,
-    require: true,
-  },
-  password: {
-    type: Date,
-    default: Date.now,
-  },
-
-  country: {
-    type: Date,
-    default: Date.now,
-  },
-});
-
-module.exports = mongoose.model("admin", adminTemplete);
+app.listen(PORT, console.log("Server done start for port: " + PORT));
