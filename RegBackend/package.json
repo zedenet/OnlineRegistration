@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18"
+  },
+  "scripts": {
+<<<<<<< HEAD
+    "start": "node server.js"
+  },
+  "name": "regbackend",
+  "version": "1.0.0",
+  "description": "this is oline student  admission and registration system",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "OnlineRegistration"
+  },
+  "keywords": [
+    "addmistion",
+    "registration",
+    "application"
+  ],
+  "author": "Belay Alamneh (Friesbhat)",
+=======
+    "start": "nodemon server.js"
+  },
+  "name": "regbackend",
+  "version": "1.0.0",
+  "description": "Online student application, admission and registration system for wolkite university",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "zerihun mulugeta and belay alemneh",
+>>>>>>> 43504d856b86c974a3bebc05314de61ff9c7b94f
+  "license": "ISC"
+}
