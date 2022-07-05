@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const cors = require("cors");
 
@@ -30,3 +31,12 @@ require('./Routers/studentRoute.js')(app);
 app.listen(8081, () => {
     console.log("Server is listening on port 8081");
 });
+=======
+const express = require("express");
+const app = express();
+const dotenv = require("dotenv");
+const PORT = 4000;
+dotenv.config();
+
+app.listen(PORT, console.log("Server done start for port: " + PORT));
+>>>>>>> 43504d856b86c974a3bebc05314de61ff9c7b94f
